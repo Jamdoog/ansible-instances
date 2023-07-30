@@ -3,6 +3,7 @@
   tasks:
     - name: Interaction
       ansible.controller.instance:
-        hostname: "{{ CONTROLLER_HOSTNAME }}"
+        hostname: "{{ item }}"
         enabled: "{{ CONTROLLER_STATE }}"
         controller_host: "{{ CONTROLLER_HOST }}"
+      loop: "{{ CONTROLLER_HOSTNAMES }}"
