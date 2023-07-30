@@ -5,3 +5,4 @@
       ansible.controller.instance:
         hostname: "{{ CONTROLLER_HOSTNAME }}"
         enabled: "{{ CONTROLLER_STATE }}"
+        controller_host: "{{ CONTROLLER_HOST }}"
