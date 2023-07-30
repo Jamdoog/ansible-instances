@@ -1,0 +1,7 @@
+- name: Enable or Disable Instance's on AAP
+  hosts: localhost
+  tasks:
+    - name: Interaction
+      ansible.controller.instance:
+        hostname: "{{ CONTROLLER_HOSTNAME }}"
+        enabled: "{{ CONTROLLER_STATE }}"
