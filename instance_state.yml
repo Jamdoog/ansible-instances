@@ -6,4 +6,5 @@
         hostname: "{{ item }}"
         enabled: "{{ CONTROLLER_STATE }}"
         controller_host: "{{ CONTROLLER_HOST }}"
+        validate_certs: false
       loop: "{{ CONTROLLER_HOSTNAMES }}"
